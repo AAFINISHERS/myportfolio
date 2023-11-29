@@ -1,0 +1,19 @@
+{
+  "name": "portfolio-final",
+  "version": "1.0.0",
+  "description": "portfolio file",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel  index.html",
+    "build": "parcel build index.html --dist-dir ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AAFINISHERS"
+  },
+  "author": "Aftab Aalam",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.10.3"
+  }
+}

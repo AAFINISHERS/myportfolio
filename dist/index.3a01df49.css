@@ -1,0 +1,347 @@
+@import "https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+One&family=Playpen+Sans&family=Poppins:ital,wght@0,400;1,300;1,400&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+One&family=Open+Sans&family=Playpen+Sans&family=Poppins:ital,wght@0,400;1,300;1,400&display=swap";
+@media (width <= 430px) {
+  :root {
+    font-size: 10px;
+  }
+
+  .intro_title {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 0;
+    display: flex;
+  }
+
+  .intro_title .btn_CV {
+    padding: .5em 0;
+  }
+
+  .intro_title .btn_CV > a > button {
+    color: #fff;
+    background-color: #00b4d8;
+    border-radius: 6px;
+    width: 8em;
+    height: 3em;
+    font-size: 10px;
+  }
+
+  .slide--content {
+    width: 50%;
+    font-size: 5px;
+    position: absolute;
+  }
+
+  .img {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+  }
+
+  .img > img {
+    width: 100%;
+  }
+
+  .section--4--box.contact_me--email {
+    font-size: 3px;
+  }
+}
+
+:root {
+  --progress-bar-width: 200px;
+  --progress-bar-height: 200px;
+  --font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #edede9;
+  font-family: Lato, sans-serif;
+}
+
+.main_section {
+  background-image: url("Download premium image of Senior woman typing on a computer keyboard by McKinsey  about typing, keyboard, office desk, computer, and online 2205414.17868f50.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 50vh;
+}
+
+.nav--element--box {
+  color: #e36414;
+  justify-content: space-between;
+  font-weight: bolder;
+  display: flex;
+}
+
+.nav--sections {
+  color: #000;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.nav--links--box {
+  display: flex;
+}
+
+.nav--links--box > a {
+  padding: 0 .5em;
+}
+
+.intro_title {
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2em 0;
+  display: flex;
+}
+
+.intro_title .btn_CV {
+  padding: .5em 0;
+}
+
+.intro_title .btn_CV > a > button {
+  color: #fff;
+  background-color: #00b4d8;
+  border-radius: 6px;
+  width: 7rem;
+  height: 1.5rem;
+}
+
+.intro_title .btn_CV > a > button:hover {
+  color: #00b4d8;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+.section--1--box {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  font-family: Lato, sans-serif;
+  display: flex;
+}
+
+.about_me--content {
+  width: 80%;
+  padding: 1em 0;
+}
+
+.section--2--box {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.percentage_bar {
+  flex-direction: row;
+  display: flex;
+}
+
+.percentage_bar > div {
+  margin: 0 .5em;
+}
+
+.progress_text {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  display: flex;
+}
+
+@keyframes growProgressBar {
+  0%, 33% {
+    --pgPercentage: 0;
+  }
+
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+
+@property --pgPercentage {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+div[role="progressbar"] {
+  --size: 4rem;
+  --fg: #369;
+  --bg: #def;
+  --pgPercentage: var(--value);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(closest-side, white 80%, transparent 0 99.9%, white 0), conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+  border-radius: 50%;
+  place-items: center;
+  animation: 3s forwards growProgressBar;
+  display: grid;
+}
+
+div[role="progressbar"]:before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) "%";
+}
+
+.section--3--box {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+#section--3 {
+  padding: 1em 0;
+}
+
+.slider-work {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.slide {
+  width: 40%;
+  height: 15rem;
+}
+
+.slide > p {
+  padding: 0 2em;
+}
+
+.slide--content {
+  width: 40%;
+  height: 10rem;
+  position: absolute;
+}
+
+.content--3 {
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  display: flex;
+  transform: translateX(200%);
+  box-shadow: 0 4px 8px #0e0d0d, 0 6px 20px #00000030;
+}
+
+.content--2 {
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  display: flex;
+  transform: translateX(100%);
+  box-shadow: 0 4px 8px #0e0d0d, 0 6px 20px #00000030;
+}
+
+.content--1 {
+  color: #fff;
+  background-color: #000;
+  border-radius: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15rem;
+  display: flex;
+  transform: translateX(0%);
+  box-shadow: 0 4px 8px #0e0d0d, 0 6px 20px #00000030;
+}
+
+.content--1 > div {
+  padding: 1em 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.dots--container {
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  display: flex;
+}
+
+.dots--container > button {
+  margin: 0 .2em;
+}
+
+.dot {
+  cursor: pointer;
+  background-color: #000;
+  border-radius: 50%;
+  width: .5rem;
+  height: .5rem;
+}
+
+.dot--active {
+  cursor: pointer;
+  background-color: #e5e5e5;
+}
+
+.section--4--box {
+  flex-direction: column;
+  display: flex;
+}
+
+.header--contact {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contact_me--email, .contact_me--phone {
+  flex-direction: row;
+  display: flex;
+}
+
+.social--content {
+  flex-direction: column;
+  display: flex;
+}
+
+.social--logo {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.email--box {
+  flex-direction: column;
+  padding: 1em .2em;
+  display: flex;
+}
+
+.content--box {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+footer {
+  background-color: #e5e5e5;
+  font-family: Poppins, sans-serif;
+}
+
+/*# sourceMappingURL=index.3a01df49.css.map */

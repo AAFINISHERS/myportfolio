@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main_section">
+      <div class="nav">
+        <nav class="nav--elements">
+          <div class="nav--element--box">
+            <div class="nav--element--title">
+              <a href="https://github.com/AAFINISHERS" target="_blank"
+                ><i data-lucide="github"
+                  ><img src="images/github.svg" alt="" /></i
+              ></a>
+            </div>
+            <ul>
+              <div class="nav--links--box">
+                <a href="#section--1" class="nav--sections"
+                  ><li>About me</li></a
+                >
+                <a href="#section--2" class="nav--sections"><li>Skills</li></a>
+                <a href="#section--3" class="nav--sections"
+                  ><li>Portfolio</li></a
+                >
+                <a href="#section--4" class="nav--sections"
+                  ><li>Contacts</li></a
+                >
+              </div>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="intro_title">
+        <h1>Hi there! I'm Aftab Aalam and</h1>
+        <h1>I'm a front-end developer</h1>
+        <div class="btn_CV">
+          <a href="https://github.com/AAFINISHERS" target="_blank"
+            ><button>GitHub</button></a
+          >
+        </div>
+      </div>
+    </div>
+    <section class="about_me" id="section--1">
+      <div class="section--1--box">
+        <h1>About me</h1>
+        <div class="about_me--content">
+          I'm a Frontend developer, I like to play games in my free time, I
+          learned front-end by self learning, also build few projects which are
+          shown in the below. All my projects code can be found in my github
+          repository, if you want to check my github please visit my github link
+          by clicking on the github logo .
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="my_skills" id="section--2">
+      <div class="section--2--box">
+        <h1>My Skills</h1>
+        <div class="my_skills--content">
+          <div class="percentage_bar">
+            <div class="progress_text">
+              <div
+                class="percentge_div"
+                role="progressbar"
+                aria-valuenow="65"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="--value: 65"
+              ></div>
+              CSS
+            </div>
+            <div class="progress_text">
+              <div
+                class="percentge_div"
+                role="progressbar"
+                aria-valuenow="40"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="--value: 40"
+              ></div>
+              HTML
+            </div>
+            <div class="progress_text">
+              <div
+                class="percentge_div"
+                role="progressbar"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="--value: 80"
+              ></div>
+              JS
+            </div>
+            <div class="progress_text">
+              <div
+                class="percentge_div"
+                role="progressbar"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="--value: 30"
+              ></div>
+              GIT
+            </div>
+            <div class="progress_text">
+              <div
+                class="percentge_div"
+                role="progressbar"
+                aria-valuenow="30"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="--value: 30"
+              ></div>
+              NPM
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <section class="my_work" id="section--3">
+      <div class="section--3--box">
+        <h1>My Work</h1>
+      </div>
+      <div class="slider-work">
+        <div class="slide" id="slider">
+          <div class="slide slide--content content--1">
+            <div class="slider__content--1">
+              <div class="img">
+                <img
+                  src="images/Screenshot 2023-11-28 151834.png"
+                  width="200rem"
+                  alt="bankist-logo"
+                />
+              </div>
+            </div>
+            <p>
+              Build this small banking account handler with the help of
+              JavaScript,While Building this Project I underStand many concept
+              in arrays and also about the interlization API available in the
+              browser for the users.
+            </p>
+          </div>
+          <div class="slide slide--content content--2 hidden">
+            <div class="slider__content--2">
+              <div class="img">
+                <img
+                  src="images/logoForkify.png"
+                  width="200rem"
+                  alt="forkify-logo"
+                />
+              </div>
+            </div>
+            <p>
+              Build this web application, You can search , add and save recipes
+              in the this forkify website.In this site we can seacrch over 10000
+              recipes and also add them to bookmark to use them later also we
+              can create our own recipe
+            </p>
+          </div>
+          <div class="slide slide--content content--3 hidden">
+            <div class="slider__content--3">
+              <div class="img">
+                <img src="images/logoMapty.png" width="200rem" alt="logo" />
+              </div>
+              <p>
+                Made this Mapty Project using the leaflet Library to display the
+                location on the map with live location, You can track all the
+                workouts and it saves the workout after reloading the page.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dots--container">
+        <!-- <button class="dot dot--1"></button>
+        <button class="dot dot--2 btn--active"></button>
+        <button class="dot dot--3"></button> !-->
+      </div>
+    </section>
+    <hr />
+    <section class="contact_me" id="section--4">
+      <div class="section--4--box">
+        <div class="header--contact"><h1>Contact Me</h1></div>
+        <div class="content--box">
+          <div class="contact_me--email">
+            <i data-lucide="mails">
+              <img src="images/mails.svg" width="20rem" alt="" />
+            </i>
+            <div class="email--box">
+              <h4>Email:-</h4>
+              <p>aftabaalam99786@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact_me--phone">
+            <i data-lucide="phone">
+              <img src="images/phone.svg" width="20rem" alt="" />
+            </i>
+            <h4>+916280299066</h4>
+          </div>
+          <div class="social--content">
+            <div class="contact_me--social">
+              <h4>Social Media</h4>
+              <div class="social--logo">
+                <a
+                  href="https://www.instagram.com/deku_.midoria_"
+                  target="_blank"
+                  ><i data-lucide="instagram"
+                    ><img src="images/instagram.svg" width="20rem" /></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/jobs/view/3762646564/?refId=ByteString(length%3D16%2Cbytes%3D6eb63ec7...b212bc2b)&trackingId=46ZgD4f4aLpmmmNJImqXUg%3D%3D"
+                  target="_blank"
+                  ><i data-lucide="linkedin"
+                    ><img src="images/linkedin.svg" width="20rem" /></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1></h1>
+    </section>
+    <hr />
+  </body>
+  <footer>&copy;Aftab Aalam</footer>
+</html>

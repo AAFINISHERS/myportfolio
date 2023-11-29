@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+One&family=Playpen+Sans&family=Poppins:ital,wght@0,400;1,300;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Mochiy+Pop+One&family=Open+Sans&family=Playpen+Sans&family=Poppins:ital,wght@0,400;1,300;1,400&display=swap');
+@media (width <= 430px) {
+  :root {
+    font-size: 10px;
+  }
+  .intro_title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 2em 0em;
+    .btn_CV {
+      padding: 0.5em 0em;
+      > a > button {
+        font-size: 10px;
+        border-radius: 6px;
+        height: 3em;
+        width: 8em;
+        background-color: #00b4d8;
+        color: white;
+      }
+    }
+  }
+
+  .slide--content {
+    width: 50%;
+    position: absolute;
+    font-size: 5px;
+  }
+  .img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > img {
+      width: 100%;
+    }
+  }
+
+  .section--4--box.contact_me--email {
+    font-size: 3px;
+  }
+}
+
+:root {
+  --progress-bar-width: 200px;
+  --progress-bar-height: 200px;
+  --font-size: 10px;
+}
+* {
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #edede9;
+}
+.main_section {
+  background-image: url(images/Download\ premium\ image\ of\ Senior\ woman\ typing\ on\ a\ computer\ keyboard\ by\ McKinsey\ \ about\ typing\,\ keyboard\,\ office\ desk\,\ computer\,\ and\ online\ 2205414.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 50vh;
+  /* background-attachment: fixed; */
+}
+.nav--element--box {
+  color: #e36414;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-between;
+  font-weight: bolder;
+}
+.nav--sections {
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+}
+.nav--links--box {
+  display: flex;
+  > a {
+    padding: 0 0.5em;
+  }
+}
+.intro_title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 2em 0em;
+  .btn_CV {
+    padding: 0.5em 0em;
+    > a > button {
+      border-radius: 6px;
+      height: 1.5rem;
+      width: 7rem;
+      background-color: #00b4d8;
+      color: white;
+    }
+    > a > button:hover {
+      background-color: white;
+      color: #00b4d8;
+      cursor: pointer;
+    }
+  }
+}
+.section--1--box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0em;
+  font-family: 'Lato', sans-serif;
+  flex-direction: column;
+}
+.about_me--content {
+  width: 80%;
+  padding: 1em 0em;
+}
+.section--2--box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.percentage_bar {
+  display: flex;
+  flex-direction: row;
+  > div {
+    margin: 0em 0.5em;
+  }
+}
+.progress_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0em;
+}
+@keyframes growProgressBar {
+  0%,
+  33% {
+    --pgPercentage: 0;
+  }
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+
+@property --pgPercentage {
+  syntax: '<number>';
+  inherits: false;
+  initial-value: 0;
+}
+
+div[role='progressbar'] {
+  --size: 4rem;
+  --fg: #369;
+  --bg: #def;
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(
+      closest-side,
+      white 80%,
+      transparent 0 99.9%,
+      white 0
+    ),
+    conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--fg);
+}
+
+div[role='progressbar']::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+}
+.section--3--box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#section--3 {
+  padding: 1em 0em;
+}
+.slider-work {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide {
+  width: 40%;
+  height: 15rem;
+  > p {
+    padding: 0em 2em;
+  }
+}
+.slide--content {
+  width: 40%;
+  height: 10rem;
+  position: absolute;
+}
+.content--3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  height: 15rem;
+  box-shadow: 0 4px 8px 0 rgb(14, 13, 13), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateX(200%);
+}
+.content--2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  height: 15rem;
+  box-shadow: 0 4px 8px 0 rgb(14, 13, 13), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateX(100%);
+}
+.content--1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  height: 15rem;
+  box-shadow: 0 4px 8px 0 rgb(14, 13, 13), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transform: translateX(0%);
+  > div {
+    padding: 1em 0em;
+  }
+}
+
+.hidden {
+  display: none;
+}
+.dots--container {
+  padding: 1em 0em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  > button {
+    margin: 0em 0.2em;
+  }
+}
+
+.dot {
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+  background-color: black;
+  cursor: pointer;
+}
+.dot--active {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+.section--4--box {
+  display: flex;
+  flex-direction: column;
+}
+.header--contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact_me--email {
+  display: flex;
+  flex-direction: row;
+}
+.contact_me--phone {
+  display: flex;
+  flex-direction: row;
+}
+.social--content {
+  display: flex;
+  flex-direction: column;
+}
+.social--logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.email--box {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0.2em;
+}
+.content--box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+footer {
+  background-color: #e5e5e5;
+  font-family: 'Poppins', sans-serif;
+}
